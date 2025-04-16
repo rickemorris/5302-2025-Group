@@ -34,7 +34,8 @@ function App() {
               <img
                 src={pet.image}
                 alt={pet.name}
-                className="w-full h-48 object-cover"
+                className="h-[140px] w-auto object-contain"
+                style={{ maxHeight: "260px", maxWidth: "100%" }}
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold">{pet.name}</h2>
