@@ -1,8 +1,17 @@
+from flask import Flask, jsonify, render_template
+from flask_cors import CORS
+import importlib
 import requests
 from bs4 import BeautifulSoup
 import json
 from urllib.parse import urljoin
 
+
+
+app = Flask(__name__)
+cors = CORS(app, origins='http://localhost:5173')
+
+@app.route("/scrape", methods=['GET'])
 def fetch_houston_spca_pets():
     url = "https://houstonspca.org/available-pets/"  # Houston SPCA Website
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -41,6 +50,11 @@ def fetch_houston_spca_pets():
         return json.dumps(pets, indent=4)
     except requests.RequestException as e:
         return json.dumps({"error": str(e)})
+    
+@app.route("/")
+def home():
+ pets = fetch_houston_spca_pets()
+ return render_template("./index.html")
 
 if __name__ == "__main__":
-    print(fetch_houston_spca_pets())
+    app.run(debug=True, port=8080)
