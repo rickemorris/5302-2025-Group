@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import axios from "axios";
-
+ 
 function App() {
   const [pets, setPets] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
   useEffect(() => {
     fetch("http://127.0.0.1:8080/scrape")
       .then((res) => res.json())
       .then((data) => {
-        setPets(data);
+        // Filter pets to remove any with unknown name or missing image
+        const validPets = data.filter(
+          pet =>
+            pet.name &&
+            pet.name.toLowerCase() !== "unknown" &&
+            pet.image &&
+            pet.image.trim() !== ""
+        );
+        setPets(validPets);
         setLoading(false);
       })
       .catch((err) => {
@@ -17,13 +24,13 @@ function App() {
         setLoading(false);
       });
   }, []);
-
+ 
   return (
-    <div className="min-h-screen bg-neutral-1000 p-6">
-      <h1 className="text-3xl font-bold mb-6 text-center">Houston SPCA Pets Available</h1>
-
+    <div className="min-h-screen bg-white p-6">
+      <h1 className="text-3xl font-bold mb-6 text-center text-black">Houston SPCA Pets Available</h1>
+ 
       {loading ? (
-        <p className="text-center">Loading pets...</p>
+        <p className="text-center text-black">Loading pets...</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pets.map((pet, index) => (
@@ -38,7 +45,7 @@ function App() {
                 style={{ maxHeight: "260px", maxWidth: "100%" }}
               />
               <div className="p-4">
-                <h2 className="text-xl font-semibold">{pet.name}</h2>
+                <h2 className="text-xl font-semibold text-black">{pet.name}</h2>
                 <p className="text-sm text-gray-600">{pet.breed}</p>
                 <p className="text-sm text-gray-500">Weight: {pet.weight}</p>
                 <a
@@ -57,5 +64,5 @@ function App() {
     </div>
   );
 }
-
+ 
 export default App;
