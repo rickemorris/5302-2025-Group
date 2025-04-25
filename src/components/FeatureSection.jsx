@@ -26,8 +26,8 @@ function App() {
   }, []);
  
   return (
-    <div className="min-h-screen bg-white p-6">
-      <h1 className="text-3xl font-bold mb-6 text-center text-black">Houston SPCA Pets Available</h1>
+    <div className="min-h-screen bg-gray p-6" id="hero">
+      <h1 className="text-3xl font-bold mb-6 text-center text-orange">Houston SPCA Pets Available</h1>
  
       {loading ? (
         <p className="text-center text-black">Loading pets...</p>

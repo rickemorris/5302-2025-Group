@@ -15,10 +15,10 @@ import houston from "../assets/profile-pictures/houston.png";
 
 
 export const navItems = [
-  { label: "Pets Available", href: "#" },
-  { label: "Ways to Help", href: "#" },
-  { label: "Donations", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Pets Available", href: "#hero" },
+  { label: "Ways to Help", href: "#help" },
+  { label: "Donations", href: "#donate" },
+  { label: "Testimonials", href: "#testimonial" },
 ];
 
 export const testimonials = [
@@ -101,25 +101,25 @@ export const donateOptions = [
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Houston SPCA Events" },
-  { href: "#", text: "Houston SPCA Volunteering" },
-  { href: "#", text: "Houston SPCA " },
-  { href: "#", text: "Houston SPCA " },
-  { href: "#", text: "Houston SPCA " },
+  { href: "https://houstonspca.org/upcoming-events/", text: "Houston SPCA Events" },
+  { href: "https://24petconnect.com/", text: "Lost Pet Search" },
+  { href: "https://24petconnect.com/", text: "24Pet Connect Pet Adoptions " },
+  { href: "https://www.houstonhumane.org/", text: "Houston Humane Society " },
+  { href: "https://www.cap4pets.org/", text: "Citizens for Animal Protection" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events Notes" },
+  { href: "https://www.paypal.com/donate/?hosted_button_id=PQF9QMC358X6U", text: "Rita B Huff Human Society of Walker County" },
+  { href: "https://www.cap4pets.org/151-uncategorised/6352-donate", text: "Citizens for Animal Protection" },
+  { href: "https://www.houstonpetsalive.org/donatenow/", text: "Houston Pets Alive Donations" },
+  { href: "https://www.houstontx.gov/barc/donate_landingpage.html", text: "Houston BARC Donations" },
+  { href: "https://www.houstonhumane.org/?form=GeneralDonation", text: "Houston Humane Society Donations" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
-  { href: "#", text: "Events" },
+  { href: "https://www.houstontx.gov/barc/get_involved.html", text: "BARC Events" },
+  { href: "https://www.houstonhumane.org/fundraisers/k9-fun-run-walk", text: "Houston Human Society Run" },
+  { href: "https://houstoncaresrescue.org/adoption/#adoption_events", text: "Houston Cares Rescue Adoption Events" },
+  { href: "https://www.houstonpetsalive.org/hpa-event/houston-puppy-adoption-event/", text: "Houston Pets Alive Adoption Event" },
+  { href: "https://houstonspca.org/upcoming-events/", text: "Houston SPCA Events" },
 ];
