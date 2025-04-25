@@ -39,9 +39,11 @@ Currently, two official plugins are available:
 - pip install python-dotenv
 
 #Change folders to api
+- mkdir api
 - cd api/
 -  python3 -m venv venv #To run the flask environment
-- . venv/Scripts/activate
+- venv/Scripts/activate
+- python test.py
 
 
 - With the above you have both flask and React running ^^ importing this github repo will run the website fully
