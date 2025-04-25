@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite + Flask
 To assist in connectivity install Vite to select the proper installation of React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -42,10 +42,27 @@ Currently, two official plugins are available:
 - cd api/
 -  python3 -m venv venv #To run the flask environment
 - . venv/Scripts/activate
-- 
+
 
 - With the above you have both flask and React running ^^ importing this github repo will run the website fully
-
+#The following are the requirements for this project
+- ﻿beautifulsoup4==4.13.4
+- blinker==1.9.0
+- certifi==2025.1.31
+- charset-normalizer==3.4.1
+- click==8.1.8
+- colorama==0.4.6
+- Flask==3.1.0
+- flask-cors==5.0.1
+- idna==3.10
+- itsdangerous==2.2.0
+- Jinja2==3.1.6
+- MarkupSafe==3.0.2
+- requests==2.32.3
+- soupsieve==2.6
+- typing_extensions==4.13.2
+- urllib3==2.4.0
+- Werkzeug==3.1.3
 
 
 
