@@ -26,37 +26,37 @@ export const testimonials = [
     user: "Ethan Ramirez",
     company: "Houston SPCA",
     image: user1,
-    text: "I adopted a dog and it was life changing.",
+    text: "Adopting my dog was the best decision I ever made! He’s brought endless love, laughter, and purpose into my life.",
   },
   {
     user: "Lila Anderson",
     company: "Houston Humane Society",
     image: user2,
-    text: "I adopted a dog and it was life changing.",
+    text: "Bringing home my rescue dog completely changed my life! Her loyalty and affection remind me every day how rewarding adoption truly is.",
   },
   {
     user: "Caleb Morgan",
     company: "Special Pals",
     image: user3,
-    text: "I adopted a dog and it was life changing.",
+    text: "Adopting from the shelter was an incredible experience, and now I can’t imagine my life without the joy and companionship my dog brings every day.",
   },
   {
     user: "Ronee Robertson",
     company: "Citizens For Animal Protection",
     image: user4,
-    text: "I adopted a dog and it was life changing.",
+    text: "I walked into the shelter just looking, but walked out with a best friend who’s filled my life with love ever since.",
   },
   {
     user: "Ethan Wright",
     company: "Harris County Pets",
     image: user5,
-    text: "I adopted a dog and it was life changing.",
+    text: "Adopting a dog not only saved his life! It transformed mine with unconditional love and a bond I never expected.",
   },
   {
     user: "Sophia Kim",
     company: "Spring Branch Rescue",
     image: user6,
-    text: "I adopted a dog and it was life changing.",
+    text: "Choosing to adopt was the most heartwarming decision I’ve made—my dog’s wagging tail reminds me every day that love is rescued.",
   },
 ];
 
