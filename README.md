@@ -38,9 +38,26 @@ request
 bs4
 flask
 ```
+- VisualStudioCode or something to run both React and Flask at the same time
 
+## You can now run the website with the following commands:
+### In a separate terminal for React:
+```
+npm run dev
+```
+### In a separate terminal for flask:
+```
+cd /api
+venv/Scripts/activate
+python test.py
+```
+#Initial Test
+- You can go to in your browser to confirm access:
+- http://localhost:5173/
+
+
+# The following is NOT REQUIRED if you arleady have Flask + ReactJS:
 **Setup**
-
 #The following is what we did to setup the website and is NOT required to do:
 ```
 npm install -g create-vite
@@ -63,9 +80,10 @@ npm run dev
 ```
 
 #Initial Test
-- You can go to in your browser to confirm access:
-- http://localhost:5173/
-
+```
+You can go to in your browser to confirm access:
+http://localhost:5173/
+```
 #Install Flask
 - Our main web crawler that absorbs information from Houston SPCA we need python to run on the website. This is not natively possible with React. For this reason we will install flask to run as an API
 
@@ -73,18 +91,17 @@ npm run dev
 
 
 #Install Flask
-- pip install flask
-
-#Then install python-dotenv to help us with the python coding in our flask environment: 
-- pip install python-dotenv
-
+```
+pip install flask
+pip install python-dotenv
+```
 #Change folders to api
-- mkdir api
-- cd api/
--  python3 -m venv venv #To run the flask environment
-- venv/Scripts/activate
-- python test.py
-
+```
+mkdir api
+cd api/
+python3 -m venv venv #To run the flask environment
+venv/Scripts/activate
+python test.py
 
 - With the above you have both flask and React running ^^ importing this github repo will run the website fully
 
