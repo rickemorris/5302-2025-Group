@@ -11,11 +11,13 @@ Currently, two official plugins are available:
 **Setup**
 
 #Setting up vite with the following:
-- npm install -g create-vite
-- Project was named : Group Project
-- Package name: group-project
-- Framework : React
-- Variant: Javascript
+```
+npm install -g create-vite
+Project was named : Group Project
+Package name: group-project
+Framework : React
+Variant: Javascript
+```
 
 #After install finish the setup with
 - cd "Group Project"
