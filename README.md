@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 **You will need the following**
-- ReactJS
+## Install ReactJS
 * React Requirements:
 ```
 ﻿beautifulsoup4==4.13.4
@@ -30,7 +30,7 @@ typing_extensions==4.13.2
 urllib3==2.4.0
 Werkzeug==3.1.3
 ```
-- Flask
+## Install Flask
 * Flask Requirements:
 ```
 flask_cors
